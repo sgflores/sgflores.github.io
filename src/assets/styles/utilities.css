@@ -1,0 +1,45 @@
+.section {
+  padding: 96px 0;
+  scroll-margin-top: calc(var(--nav-height) + 12px);
+  position: relative;
+}
+
+.section-alt {
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+}
+
+.section-header {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stack-sm {
+  gap: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.external-icon::after {
+  content: ' ↗';
+}

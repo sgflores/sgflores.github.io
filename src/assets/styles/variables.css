@@ -1,0 +1,30 @@
+:root {
+  --bg: #f8f9fb;
+  --bg-elevated: #ffffff;
+  --surface: #eef1f5;
+  --surface-hover: #e8ecf1;
+
+  --text: #17191c;
+  --text-secondary: #5f6670;
+  --text-muted: #8a919b;
+
+  --border: #dde2e8;
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+
+  --code-bg: #eef1f5;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.5rem;
+
+  --radius: 6px;
+  --nav-height: 64px;
+  --container: 1120px;
+  --focus: 0 0 0 3px rgba(37, 99, 235, 0.35);
+}
