@@ -133,12 +133,24 @@ import { site } from '../../content/site.js'
 }
 
 @media (max-width: 719px) {
+  .about {
+    text-align: center;
+  }
+
+  .about-body {
+    margin-top: 24px;
+  }
+
   .photo {
     float: none;
     display: block;
     width: 148px;
     height: 148px;
-    margin: 0 auto 1.25rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .text {
+    text-align: left;
   }
 }
 </style>
