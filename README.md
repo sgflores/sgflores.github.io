@@ -1,34 +1,44 @@
 # sgflores.github.io
 
-Personal engineering portfolio for **Serolf Flores** — Vue 3 + Vite + Vue Router.
+Personal engineering portfolio — Vue 3 + Vite + Vue Router + GitHub Pages.
 
-## Develop
+Live: https://sgflores.github.io/
+
+## Automatic deploy
+
+Every push to `main` runs `.github/workflows/deploy.yml`:
+
+```
+push → npm ci → npm run build → dist/ → GitHub Pages
+```
+
+### One-time setup (required)
+
+1. Open https://github.com/sgflores/sgflores.github.io/settings/pages  
+2. Under **Build and deployment → Source**, choose **GitHub Actions**  
+   (not “Deploy from a branch”)  
+3. Push to `main`, or open **Actions → Deploy to GitHub Pages → Run workflow**
+
+If Source stays on “Deploy from a branch”, GitHub serves the Vue **source** and the site stays blank.
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Production build
 
 ```bash
-npm run build
+npm run build    # writes dist/ + copies index.html → 404.html (SPA routes)
 npm run preview
 ```
 
-`npm run build` writes to `dist/` and copies `index.html` → `404.html` so GitHub Pages can serve SPA deep links (`/work/jevly`, `/engineering/...`).
-
-## Deploy
-
-GitHub Actions (`.github/workflows/deploy.yml`) builds on push to `main`/`master` and deploys via GitHub Pages.
-
-In the repo settings:
-
-1. **Settings → Pages → Build and deployment → Source:** GitHub Actions
-2. Push to `main` (or run the workflow manually)
-
-Site URL: https://sgflores.github.io/
+`vite.config.js` uses `base: '/'` for this user site.
 
 ## Content
 
-Copy lives in `src/content/`. Resume: `public/Resume.pdf`. Photo: `public/serolf-flores.webp`.
+- Copy: `src/content/`
+- Resume: `public/Resume.pdf`
+- Photo: `public/serolf-flores.webp`
