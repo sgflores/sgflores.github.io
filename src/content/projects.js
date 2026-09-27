@@ -7,9 +7,9 @@ export const projects = [
     dates: 'Nov 2025 - Present',
     highlight: 'Built from the ground up',
     summary:
-      'Offline-capable, multi-business POS and business management platform built for Philippine SMEs.',
-    emphasis: ['Works offline', 'Multi-business', 'B2B POS'],
-    tech: ['Laravel', 'Vue 3', 'TypeScript', 'MySQL', 'AWS'],
+      'Offline-capable PWA for multi-business POS and business management, built for Philippine SMEs.',
+    emphasis: ['PWA', 'Works offline', 'Multi-business', 'B2B POS'],
+    tech: ['Laravel', 'Vue 3', 'TypeScript', 'PWA', 'MySQL', 'AWS'],
     caseStudyPath: '/work/jevly',
     caseStudyLabel: 'View Case Study',
     externalUrl: 'https://upscalepos.com',
@@ -18,7 +18,7 @@ export const projects = [
   },
   {
     id: 'stallion',
-    number: '02',
+    number: '01',
     name: 'Stallion Express',
     role: 'Full-Stack Engineer',
     dates: 'Oct 2020 - Apr 2026',
@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     id: 'qgp',
-    number: '03',
+    number: '02',
     name: 'QGP',
     role: 'Senior Full-Stack PHP Developer',
     dates: 'Mar 2021 - Oct 2025',
@@ -68,18 +68,18 @@ export const jevlyCase = {
   scale: [
     { value: 'Built', label: 'From scratch' },
     { value: 'Multi-business', label: 'Support' },
-    { value: 'Offline', label: 'Capable sales' },
+    { value: 'PWA', label: 'Offline-capable client' },
     { value: 'Live', label: 'Production product' },
   ],
   intro:
-    'A multi-business POS and business management platform built from the ground up for Philippine SMEs.',
+    'An offline-capable PWA for multi-business POS and business management, built from the ground up for Philippine SMEs.',
   problem: [
     'Many Philippine SMEs operate where internet connectivity is unreliable. Sales and inventory work cannot stop when the network drops.',
     'The product needed to support separate businesses and branches, retail and food-service workflows, and Philippine fiscal requirements, even when connectivity is weak.',
   ],
   approach: [
     'Designed and developed the full platform across Laravel, Vue.js, TypeScript, databases, and AWS.',
-    'Built an offline-capable client so stores can keep selling and sync when the connection returns.',
+    'Built an offline-capable PWA so stores can install it, keep selling, and sync when the connection returns.',
     'Supported separate businesses, branches, and operational data in one product.',
     'Delivered core workflows for POS sales, inventory, purchasing, payments, customers, reporting, audit trails, and multi-branch operations.',
     'Implemented Philippine fiscal workflows including receipts, X/Z readings, transaction journals, and audit logging.',
@@ -88,6 +88,7 @@ export const jevlyCase = {
   stack: [
     'PHP / Laravel',
     'Vue 3 / TypeScript',
+    'PWA',
     'MySQL',
     'AWS',
     'Docker / Linux',

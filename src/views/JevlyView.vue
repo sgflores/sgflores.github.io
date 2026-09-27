@@ -14,6 +14,8 @@ import { jevlyCase } from '../content/projects.js'
     :scale="jevlyCase.scale"
     :external-url="jevlyCase.externalUrl"
     :external-label="jevlyCase.externalLabel"
+    back-hash="#products"
+    back-label="Products"
   >
     <section class="block">
       <h2>The problem</h2>
@@ -27,7 +29,7 @@ import { jevlyCase } from '../content/projects.js'
           Vue / TypeScript
                  │
                  ▼
-        Offline-capable client
+        Offline-capable PWA
                  │
                  ▼
            Laravel API

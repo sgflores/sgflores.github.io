@@ -8,6 +8,8 @@ defineProps({
   scale: { type: Array, default: () => [] },
   externalUrl: { type: String, default: '' },
   externalLabel: { type: String, default: '' },
+  backHash: { type: String, default: '#work' },
+  backLabel: { type: String, default: 'Selected Work' },
 })
 </script>
 
@@ -15,7 +17,7 @@ defineProps({
   <main class="case">
     <div class="container">
       <p class="crumb">
-        <RouterLink :to="{ path: '/', hash: '#work' }">Selected Work</RouterLink>
+        <RouterLink :to="{ path: '/', hash: backHash }">{{ backLabel }}</RouterLink>
         <span aria-hidden="true"> / </span>
         <span>{{ title }}</span>
       </p>
@@ -35,8 +37,8 @@ defineProps({
           >
             {{ externalLabel }}
           </a>
-          <RouterLink class="btn btn-secondary" :to="{ path: '/', hash: '#work' }">
-            Back to Selected Work
+          <RouterLink class="btn btn-secondary" :to="{ path: '/', hash: backHash }">
+            Back to {{ backLabel }}
           </RouterLink>
         </div>
       </header>

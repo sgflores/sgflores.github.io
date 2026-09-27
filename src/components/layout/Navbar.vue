@@ -6,6 +6,7 @@ const open = ref(false)
 
 const links = [
   { label: 'Work', to: { path: '/', hash: '#work' } },
+  { label: 'Products', to: { path: '/', hash: '#products' } },
   { label: 'Open Source', to: { path: '/', hash: '#open-source' } },
   { label: 'Experience', to: { path: '/', hash: '#experience' } },
   { label: 'Expertise', to: { path: '/', hash: '#expertise' } },

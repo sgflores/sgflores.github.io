@@ -12,6 +12,7 @@ import { site } from '../../content/site.js'
       </div>
       <div class="links">
         <RouterLink :to="{ path: '/', hash: '#work' }">Work</RouterLink>
+        <RouterLink :to="{ path: '/', hash: '#products' }">Products</RouterLink>
         <RouterLink :to="{ path: '/', hash: '#open-source' }">Open Source</RouterLink>
         <a :href="site.github" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a :href="site.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>

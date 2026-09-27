@@ -5,7 +5,7 @@ export const expertise = [
   },
   {
     group: 'Frontend',
-    items: 'Vue · Vue 3 · JavaScript · TypeScript · Pinia · PrimeVue',
+    items: 'Vue · Vue 3 · JavaScript · TypeScript · Pinia · PrimeVue · PWA',
   },
   {
     group: 'Data',
