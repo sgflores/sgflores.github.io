@@ -8,7 +8,7 @@ import { experience } from '../../content/experience.js'
     id="experience"
     label="Engineering Experience"
     title="12+ years across production software and business systems."
-    description="Logistics, SaaS, eCommerce, healthcare, and retail. From design through production support."
+    description="Logistics, eCommerce, healthcare, and retail. From design through production support."
   >
     <ol class="timeline">
       <li v-for="job in experience" :key="job.company" class="item">

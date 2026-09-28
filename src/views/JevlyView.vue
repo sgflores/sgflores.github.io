@@ -6,7 +6,7 @@ import { jevlyCase } from '../content/projects.js'
 
 <template>
   <CaseStudyLayout
-    label="Independent Product Development"
+    label="Selected Experience"
     :title="jevlyCase.title"
     :role="jevlyCase.role"
     :dates="jevlyCase.dates"

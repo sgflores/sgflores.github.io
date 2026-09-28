@@ -1,23 +1,23 @@
 <script setup>
 import CaseStudyLayout from '../components/projects/CaseStudyLayout.vue'
-import { qgpCase } from '../content/projects.js'
+import { saasMarketplaceCase } from '../content/projects.js'
 </script>
 
 <template>
   <CaseStudyLayout
-    label="Professional Experience"
-    :title="qgpCase.title"
-    :role="qgpCase.role"
-    :dates="qgpCase.dates"
-    :intro="qgpCase.intro"
-    :scale="qgpCase.scale"
-    :external-url="qgpCase.externalUrl"
-    :external-label="qgpCase.externalLabel"
+    label="Selected Experience"
+    :title="saasMarketplaceCase.title"
+    :role="saasMarketplaceCase.role"
+    :dates="saasMarketplaceCase.dates"
+    :intro="saasMarketplaceCase.intro"
+    :scale="saasMarketplaceCase.scale"
+    :external-url="saasMarketplaceCase.externalUrl"
+    :external-label="saasMarketplaceCase.externalLabel"
   >
     <section class="block">
       <h2>What I worked on</h2>
       <ul>
-        <li v-for="(item, i) in qgpCase.contributions" :key="i">
+        <li v-for="(item, i) in saasMarketplaceCase.contributions" :key="i">
           {{ item }}
         </li>
       </ul>

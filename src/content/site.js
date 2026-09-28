@@ -14,14 +14,12 @@ export const site = {
     'Senior Full-Stack Engineer with 12+ years of experience building production software with PHP/Laravel, Vue, TypeScript, SQL, APIs, and AWS.',
   hero: {
     positioning:
-      'I build and support production software across logistics, SaaS, eCommerce, and business operations.',
+      'I build and support production software across logistics, B2B SaaS, eCommerce, healthcare, and retail.',
     tech: 'PHP / Laravel · Vue · TypeScript · SQL · AWS',
     underline: '12+ years of full-stack engineering experience.',
     domains:
       'Experience across: Logistics · SaaS · eCommerce · POS · Retail · Healthcare',
   },
-  currently:
-    'Currently building and maintaining Jevly POS, and continuing full-stack product work.',
   about: [
     "I'm a Senior Full-Stack Engineer based in Cebu City, Philippines, with 12+ years of experience building and supporting production software.",
     "Most of my work has been around PHP/Laravel, Vue, JavaScript/TypeScript, SQL, APIs, and AWS. I've worked on logistics platforms, SaaS products, eCommerce systems, healthcare applications, and business management software.",

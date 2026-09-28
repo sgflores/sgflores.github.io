@@ -12,7 +12,7 @@ defineProps({
     <p class="number">{{ project.number }}</p>
     <h3 class="name">{{ project.name }}</h3>
     <p class="role">{{ project.role }}</p>
-    <p class="dates">{{ project.dates }}</p>
+    <p v-if="project.dates" class="dates">{{ project.dates }}</p>
     <p v-if="project.highlight" class="highlight">{{ project.highlight }}</p>
     <p class="summary">{{ project.summary }}</p>
     <p class="emphasis">{{ project.emphasis.join(' · ') }}</p>
@@ -24,6 +24,7 @@ defineProps({
         {{ project.caseStudyLabel }} →
       </RouterLink>
       <a
+        v-if="project.externalUrl"
         class="btn btn-link external-icon"
         :href="project.externalUrl"
         target="_blank"

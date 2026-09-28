@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { site } from '../content/site.js'
-import { jevlyCase, stallionCase, qgpCase } from '../content/projects.js'
+import { jevlyCase, stallionCase, saasMarketplaceCase } from '../content/projects.js'
 import { engineering } from '../content/engineering.js'
 import HomeView from '../views/HomeView.vue'
 import JevlyView from '../views/JevlyView.vue'
 import StallionView from '../views/StallionView.vue'
-import QgpView from '../views/QgpView.vue'
+import SaasMarketplaceView from '../views/SaasMarketplaceView.vue'
 import EngineeringNoteView from '../views/EngineeringNoteView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 
@@ -31,10 +31,14 @@ const router = createRouter({
       meta: { title: stallionCase.metaTitle },
     },
     {
+      path: '/work/saas-marketplace',
+      name: 'work-saas-marketplace',
+      component: SaasMarketplaceView,
+      meta: { title: saasMarketplaceCase.metaTitle },
+    },
+    {
       path: '/work/qgp',
-      name: 'work-qgp',
-      component: QgpView,
-      meta: { title: qgpCase.metaTitle },
+      redirect: '/work/saas-marketplace',
     },
     {
       path: '/engineering/:slug',

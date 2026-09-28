@@ -3,7 +3,7 @@ defineProps({
   label: { type: String, default: 'Case Study' },
   title: { type: String, required: true },
   role: { type: String, required: true },
-  dates: { type: String, required: true },
+  dates: { type: String, default: '' },
   intro: { type: String, required: true },
   scale: { type: Array, default: () => [] },
   externalUrl: { type: String, default: '' },
@@ -26,10 +26,11 @@ defineProps({
         <p class="section-label">{{ label }}</p>
         <h1>{{ title }}</h1>
         <p class="role">{{ role }}</p>
-        <p class="dates">{{ dates }}</p>
+        <p v-if="dates" class="dates">{{ dates }}</p>
         <p class="intro">{{ intro }}</p>
-        <div v-if="externalUrl" class="actions">
+        <div class="actions">
           <a
+            v-if="externalUrl"
             class="btn btn-primary external-icon"
             :href="externalUrl"
             target="_blank"

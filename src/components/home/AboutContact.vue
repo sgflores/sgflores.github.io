@@ -20,7 +20,6 @@ import { site } from '../../content/site.js'
           />
           <div class="text">
             <p v-for="(para, i) in site.about" :key="i">{{ para }}</p>
-            <p class="currently">{{ site.currently }}</p>
           </div>
         </div>
       </div>

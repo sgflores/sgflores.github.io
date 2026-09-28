@@ -8,13 +8,9 @@ export const experience = [
       'Shipping automation · Carrier APIs · eCommerce integrations · Fulfillment · Production support',
     ],
   },
-  {
-    dates: 'Mar 2021 - Oct 2025',
-    company: 'QGP Limited',
-    role: 'Senior Full-Stack PHP Developer',
-    meta: 'Concurrent full-time role',
-    points: ['Laravel · SaaS · Marketplace · Automation · APIs'],
-  },
+  // Former concurrent role is not listed as employment.
+  // The work appears as selected project experience:
+  // SaaS & Marketplace Platforms.
   {
     dates: 'Aug 2019 - Oct 2020',
     company: 'Tritontek, Inc.',
